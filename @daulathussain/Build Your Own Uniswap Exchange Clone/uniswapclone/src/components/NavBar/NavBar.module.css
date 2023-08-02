@@ -76,11 +76,11 @@
   color: #cff80b;
   border-radius: 0.5rem;
   padding: 1.2rem 1.5rem;
-  font-size: 1.2rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin: 0;
 }
 
 .NavBar_box_right button {
