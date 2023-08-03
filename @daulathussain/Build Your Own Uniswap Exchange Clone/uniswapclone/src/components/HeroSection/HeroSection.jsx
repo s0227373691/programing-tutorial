@@ -30,7 +30,7 @@ const HeroSection = ({ accounts, tokenData }) => {
               alt="image"
               width={20}
               height={20}
-              onClick={() => setOpenSettingtrue}
+              onClick={() => setOpenSetting(true)}
             />
           </div>
         </div>
@@ -72,7 +72,7 @@ const HeroSection = ({ accounts, tokenData }) => {
         )}
       </div>
 
-      {openSetting && <Token openSetting={openSetting} />}
+      {openSetting && <Token setOpenSetting={setOpenSetting} />}
       {openToken && (
         <SearchToken
           openToken={openToken}
