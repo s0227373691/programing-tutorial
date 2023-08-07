@@ -37,7 +37,7 @@ const HeroSection = ({ accounts, tokenData }) => {
 
         <div className={Style.HeroSection_box_input}>
           <input type="text" placeholder="0" />
-          <button onClick={() => openToken(true)}>
+          <button onClick={() => setOpenToken(true)}>
             <Image
               src={images.image || images.ethereum}
               width={20}
@@ -51,7 +51,7 @@ const HeroSection = ({ accounts, tokenData }) => {
 
         <div className={Style.HeroSection_box_input}>
           <input type="text" placeholder="0" />
-          <button onClick={() => openToken(true)}>
+          <button onClick={() => setOpenTokensTwo(true)}>
             <Image
               src={tokenTwo.image || images.ethereum}
               width={20}
@@ -66,7 +66,7 @@ const HeroSection = ({ accounts, tokenData }) => {
         {accounts ? (
           <button className={Style.HeroSection_box_btn}>Connect Wallet</button>
         ) : (
-          <button className={Style.HeroSection_box_btn} onClick={() => {}}>
+          <button className={Style.HeroSection_box_btn} onClick={() => { }}>
             Swap
           </button>
         )}
@@ -75,12 +75,12 @@ const HeroSection = ({ accounts, tokenData }) => {
       {openSetting && <Token setOpenSetting={setOpenSetting} />}
       {openToken && (
         <SearchToken
-          openToken={openToken}
+          openToken={setOpenToken}
           tokens={setTokenOne}
           tokenData={tokenData}
         />
       )}
-      {openToken && (
+      {openTokensTwo && (
         <SearchToken
           openToken={setOpenTokensTwo}
           tokens={setTokenTwo}

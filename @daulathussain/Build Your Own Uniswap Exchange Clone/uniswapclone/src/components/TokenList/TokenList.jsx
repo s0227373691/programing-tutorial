@@ -9,7 +9,7 @@ const TokenList = ({ tokenDate, setOpenTokenBox }) => {
   const data = [1, 2, 3, 4, 5, 6, 7];
   return (
     <div className={Style.TokenList}>
-      <p className={Style.TokenList_close} onClick={() => setOpenTokenBoxfalse}>
+      <p className={Style.TokenList_close} onClick={() => setOpenTokenBox(false)}>
         <Image src={images.cross} alt="close" width={20} height={20} />
       </p>
       <div className={Style.TokenList_title}>
