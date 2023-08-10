@@ -1,13 +1,12 @@
 const ethers = require("ethers");
 
 const provider = new ethers.providers.JsonRpcProvider(
-  "https://mainnet.infura.io/v3/fef7d6b62a0c478eb8ab97987a63da12"
+  "https://mainnet.infura.io/v3/5f94c4ef4a60426395823085cb3eff96"
 );
 
 const TOKEN_WETH = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
 const TOKEN_DAI = "0x6B175474E89094C44Da98b954EedeAC495271d0F";
 
-// const uniRouterAddress = "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45";
 const uniRouterAddress = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
 const sushiRouterAddress = "0xd9e1ce17f2641f24ae83637ab66a2cca9c378b9f";
 
