@@ -39,7 +39,7 @@ function App() {
       setPaidMsg(paidMsg);
     }
     init();
-  }, [provider]);
+  }, [provider, contract]);
   return (
     <div className="App">
       <Navbar />
